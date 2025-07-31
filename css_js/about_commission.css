@@ -1,0 +1,50 @@
+.avatar {
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+.avatar img {
+    border-radius: 999px;
+    box-shadow: 0 0 8px #dd9ded;
+    width: 150px;
+    height: 150px;
+}
+
+.text-content {
+    margin: 50px 100px 0 100px;
+    color: #aa00d4;
+    text-align: justify;
+    line-height: 150%;
+}
+
+h3 {
+    color: #cc00ff;
+    margin: 30px 0 0 0;
+}
+h3::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px; /* 根據圖片大小調整 */
+  height: 24px;
+  margin-right: 6px; /* 文字與圖片的距離 */
+  background-image: url("../assets/h3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text-content a {
+    display: inline-block;
+    color: #cc00ff;
+    border: 2px solid #cc00ff;
+    border-radius: 999px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.text-content a:hover {
+    color: #fff;
+    background-color: #cc00ff;
+}
+
+@media screen and (max-width: 768px) {
+    .text-content { margin: 50px 15px;}
+}

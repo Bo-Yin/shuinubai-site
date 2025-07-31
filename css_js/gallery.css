@@ -1,0 +1,89 @@
+.artwork_nav ul {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.artwork_nav li {
+    border: 2px solid #cc00ff;
+    color: #cc00ff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 999px;
+    padding: 4px 20px;
+    margin: 0 10px;
+}
+.artwork_nav li:hover {
+    background-color: #cc00ff;
+    color: #fff;
+}
+
+.gallery_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 1.5rem;
+    justify-items: center;
+    margin: 25px 0 50px 0;
+}
+
+.gallery_grid img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* 保持正方形 */
+    transition: 0.1s;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #d7d7d7;
+    box-shadow: 1px 1px 5px  #d7d7d7; 
+}
+.gallery_grid img:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 20; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Add Animation */
+.modal-content {  
+  animation-name: zoom;
+  animation-duration: 0.2s;
+}
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  top: 35px;
+  right: 45px;
+  z-index: 12;
+}
+
+/* 手機版專用樣式 */
+@media screen and (max-width: 768px) {
+  .gallery_grid {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); 
+    gap: 1rem;
+  }
+}
