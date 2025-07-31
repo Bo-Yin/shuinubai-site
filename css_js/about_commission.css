@@ -46,5 +46,8 @@ h3::before {
 }
 
 @media screen and (max-width: 768px) {
-    .text-content { margin: 50px 15px;}
+    .text-content { 
+        margin: 50px 15px;
+        text-align: left;
+    }
 }
