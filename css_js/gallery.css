@@ -1,25 +1,3 @@
-.artwork_nav ul {
-    display: flex;
-    margin: 0;
-    list-style-type: none;
-    padding: 20px 0;
-    justify-content: center;
-}
-
-.artwork_nav li {
-    border: 2px solid #cc00ff;
-    color: #cc00ff;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 999px;
-    padding: 4px 20px;
-    margin: 0 10px;
-}
-.artwork_nav li:hover {
-    background-color: #cc00ff;
-    color: #fff;
-}
-
 .gallery_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 

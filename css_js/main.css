@@ -9,8 +9,6 @@ html, body {
 }
 
 body {
-    background-image: url(../assets/bg.png);
-    background-attachment: fixed;
     font-family: "Microsoft JhengHei", "Heiti TC", "PingFang TC", "Noto Sans TC", "Noto Sans", "Helvetica", "Arial", sans-serif;
 }
 
@@ -20,47 +18,31 @@ a {
 }
 
 header {
-    background-color: #fff;
     color: #cc00ff;
-    box-shadow: 0px 2px 10px  #dd9ded;
+    box-shadow: 0px 1px 10px  #eeaaff;
     margin: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
     z-index: 10;
 }
 
+.logo_div {
+    padding: 20px 20px 0 20px;
+}
 .logo {
-    text-shadow: 3px 3px #eeaaff;
-    margin: 0;
-    padding: 0 20px;
+    width: 300px;
 }
 
-.main_nav ul {
-    display: flex;
-    margin: 0;
-    list-style-type: none;
-}
-
-.main_nav li {
-    padding: 15px 30px;
-    text-align: center;
-    font-weight: bold;
-}
-.main_nav li:hover {
-    background-color: #cc00ff;
-    color: #fff;
+nav {
+    text-align: right;
+    padding: 0 20px 20px 0;
 }
 
 main {
     max-width: 1024px;
+    min-height: 90%;
     width: 100%;
     background-color: #fff;
     margin: 0 auto;
     padding: 20px 50px 100px 50px;
-    box-shadow: 0 0 1px #d19ad1;
 }
 
 h2 {
@@ -83,10 +65,10 @@ h2::before {
 
 footer {
     background-color: #fff;
-    color: #aa00d4;
+    color: #cc00ff;
     text-align: center;
     margin: 0;
-    box-shadow: 0px -2px 10px  #dd9ded;
+    box-shadow: 0px -1px 10px  #eeaaff;
     padding: 20px 0;
 }
 
@@ -112,22 +94,17 @@ footer {
 
 /* 手機版專用樣式 */
 @media screen and (max-width: 768px) {
-    body {
-        background-image: none;
-    }
-    header {
-        justify-content: flex-start;
-        width: 100%;
+    .logo_div {
+        text-align: center;
+        padding: 20px 0 10px 0;
     }
     .logo {
-        font-size: 14px;
-        margin: 0 0 0 15px;
-        padding: 0;
+        width: 300px;
     }
-    .main_nav ul {justify-content: flex-start;}
-    .main_nav li {
-        font-size: 10px;
-        padding: 15px 8px;
+    nav {
+        font-size: 12px;
+        text-align: center;
+        padding: 10px 0 20px 0;
     }
     main {
         padding: 10px;
